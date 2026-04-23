@@ -66,3 +66,34 @@ span img{
     width:20px;
     height:20px;
 }
+
+.buttons .close_btn{
+     width:30%;
+    padding:10px 15px;
+    font-size:20px;
+    font-weight:700;
+    background:red;
+    border-radius:12px;
+    color:white;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+.buttons .close_btn:hover{
+    background:rgb(90, 1, 1);
+}
+.buttons .Submit_btn{
+    width:30%;
+    padding:10px 15px;
+    font-size:20px;
+    font-weight:700;
+    background:rgb(51, 83, 3);;
+    border-radius:12px;
+    color:white;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+.buttons .Submit_btn:hover{
+    background:rgb(2, 49, 2);
+}

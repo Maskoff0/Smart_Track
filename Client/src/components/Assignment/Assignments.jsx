@@ -23,12 +23,11 @@ const Assignments = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const selectedField = getSelectedField();
-    const fieldName = selectedField ?.fieldName;
     const cropType = selectedField?.cropType;
     const fieldStage = selectedField?.fieldStage;
     const fieldStatus = selectedField?.fieldStatus;
 
-    const data = { agentName : field.agentName , fieldname : field.fieldName , cropType : cropType ,fieldStage : fieldStage ,fieldStatus : fieldStatus}
+    const data = { agentName : field.agentName , fieldName : field.fieldName , cropType : cropType ,fieldStage : fieldStage ,fieldStatus : fieldStatus}
     console.log(data);
 
     const URL = 'http://localhost:5000/assignments';

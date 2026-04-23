@@ -74,3 +74,12 @@
     font-size: 1rem;
     transition: background 0.2s;
 }
+.status_risk{
+    color : red;
+}
+.status_completed{
+    color : green;
+}
+.status_active{
+    color : blue;
+}

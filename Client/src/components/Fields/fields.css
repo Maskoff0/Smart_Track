@@ -182,7 +182,8 @@ form .Inputs{
     flex-direction:column;
 }
 
-.Inputs input{
+.Inputs div  input,
+.Inputs div select{
     width:90%;
     height:40px;
     border-radius:10px;
@@ -194,10 +195,10 @@ form .Inputs{
     margin-top:15px;
 
 }
-.Inputs input::placeholder,
-.Input input::placeholder{
+.Inputs  div input::placeholder,
+.Input div  select::placeholder{
     color:black;
-    font-size:18px;
+    font-size:19px;
     font-weight:800;
 }
 .buttons{
@@ -208,7 +209,8 @@ form .Inputs{
   gap:30px;
   margin-top:20px;
 }
-.close_btn{
+.buttons .reject_btn{
+    width:30%;
     padding:10px 15px;
     font-size:20px;
     font-weight:700;
@@ -219,7 +221,12 @@ form .Inputs{
     outline:none;
     cursor:pointer;
 }
-.Submit_btn{
+
+.buttons .reject_btn:hover{
+    background:rgb(90, 1, 1);
+}
+.buttons .okay_btn{
+    width:30%;
     padding:10px 15px;
     font-size:20px;
     font-weight:700;
@@ -231,13 +238,10 @@ form .Inputs{
     cursor:pointer;
 }
 
-.close_btn:hover{
-    background:rgb(90, 1, 1);
-}
-
-.Submit_btn:hover{
+.buttons .okay_btn:hover{
     background:rgb(2, 49, 2);
 }
+
 .Inputs div .Input_label{
     background:transparent;
     color:black;

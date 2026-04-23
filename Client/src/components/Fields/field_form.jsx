@@ -84,8 +84,8 @@ const Field_form = ({onClose}) => {
                     </div>
                 </div>
                 <div className="buttons">
-                    <button className="close_btn" type="button" onClick ={onClose}>Close</button>
-                    <button className="Submit_btn" type="submit">Submit</button>
+                    <button className="reject_btn" type="button" onClick ={onClose}>Close</button>
+                    <button className="okay_btn" type="submit">Submit</button>
                 </div>
         </form>
     </div>

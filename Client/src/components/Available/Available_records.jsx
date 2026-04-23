@@ -3,7 +3,7 @@ import "./Available.css"
 
 
 const getStatusClass = (status) => {
-  if (status === "At Risk") return "status_ risk";
+  if (status === "At Risk") return "status_risk";
   if (status === "Completed") return "status_completed";
   if (status === "Active") return "status_active";
   return "";
