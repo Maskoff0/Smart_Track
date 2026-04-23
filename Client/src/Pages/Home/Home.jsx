@@ -46,35 +46,38 @@ const Home = () => {
   }
 
   return (
-    <div className="Home">
-      <div className="Header">
-        <h1>SMART TRACK</h1>
-        <h3>All in one place field management System</h3>
+    <div className="Home_Container">
+      <div className="Background">
+        <img src="/icons/front-img.jpg" alt="Background"/>
       </div>
-
-           {/*Registration Form*/}
-           {/*Log-in*/}
-       <div className="Form-Container" id="Log-In">
-        <h2>Log-In</h2>
-         <form className="inputs" onSubmit={onSubmit}>
-            <div>
-              <label>EmployeeNo</label>
-              <input type="text" className="Input" placeholder="Enter EmployeeNo..." onChange={(e) => setemployeeNo(e.target.value)}/>
-            </div>
-            <div>
-              <label>Password</label>
-              <input type="password" className="Input" placeholder="Enter Password..." onChange = {(e)=> setpassword(e.target.value)}/>
-            </div>
-            <div>
-              <label>Role</label>
-              <select className='role' onChange={(e) => setrole(e.target.value)}>
-                <option value="Admin">Admin</option>
-                <option value="Agent" >Agent</option>
-              </select>
-            </div>
-            <button type="submit" id="Submit">Log-In</button>
-         </form>
-       </div>
+      <div className ="Home">
+        <div className="Header">
+          <h1>SMART TRACK</h1>
+          <h3>All in one place field management System</h3>
+        </div>
+            {/*Log-in*/}
+        <div className="Form-Container" id="Log-In">
+          <h2>Log-In</h2>
+          <form className="inputs" onSubmit={onSubmit}>
+              <div>
+                <label>EmployeeNo</label>
+                <input type="text" className="Input" placeholder="Enter EmployeeNo..." onChange={(e) => setemployeeNo(e.target.value)}/>
+              </div>
+              <div>
+                <label>Password</label>
+                <input type="password" className="Input" placeholder="Enter Password..." onChange = {(e)=> setpassword(e.target.value)}/>
+              </div>
+              <div>
+                <label>Role</label>
+                <select className='role' onChange={(e) => setrole(e.target.value)}>
+                  <option value="Admin">Admin</option>
+                  <option value="Agent" >Agent</option>
+                </select>
+              </div>
+              <button type="submit" id="Submit">Log-In</button>
+          </form>
+        </div>
+      </div>
             
     </div>
   )
