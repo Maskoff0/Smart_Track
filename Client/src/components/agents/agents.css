@@ -1,0 +1,68 @@
+.agent_container{
+    width:100%;
+    padding:0 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:15px;
+}
+.agent_container h1{
+    font-size:60px;
+}
+.agent_container span{
+    padding:10px 12px;
+    font-size:20px;
+    font-weight:800;
+    background:royalblue;
+    color:#fff;
+    border-radius:13px;
+    cursor:pointer;
+}
+.agent_container span:hover{
+    background:rgb(0, 0, 128);
+}
+
+.agent_container p{
+    font-size:20px;
+    font-weight:800;
+}
+
+.agent_list{
+    width: 70%;
+    margin:10px auto;
+    border-top:1px solid #333;
+    padding:15px 10px;
+    
+}
+.agent_list .agent_list_title{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: center;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 1.05rem;
+}
+.agent_list .agent_list_title span{
+    font-size:30px;
+    font-weight:800;
+}
+.agent_list .agent_dummy_data div{
+    display:flex;
+   gap:180px;
+    align-items:center;
+    padding:10px 15px;
+    margin-top:10px;
+    border-bottom:1px solid #333;
+}
+.agent_list .agent_dummy_data div span{
+   font-size:20px;
+   font-weight:800;
+}
+
+
+span img{
+    width:20px;
+    height:20px;
+}

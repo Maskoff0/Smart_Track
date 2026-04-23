@@ -1,0 +1,46 @@
+.available{
+    background:#fff;
+    padding:10px 5px;
+    margin-top:15px;
+    margin-bottom:15px;
+    border-radius:12px;
+}
+.assigned{
+    background:#fff;
+    padding:10px 5px;
+    margin-top:20px;
+    border-radius:12px;
+}
+.top{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    align-items: center;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 1rem;
+}
+.top span{
+    font-size:20px;
+}
+
+.available_data{
+    max-height: 200px; /* Adjust as needed */
+    overflow-y:auto;
+}
+.available_record,
+.dummy div{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr ;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ececec;
+    background: #fff;
+    font-size: 10px;
+    transition: background 0.2s;
+}
+.available_record span,
+.dummy div span{
+    font-size:19px;
+}

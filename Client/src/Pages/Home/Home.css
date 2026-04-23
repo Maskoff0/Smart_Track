@@ -1,0 +1,84 @@
+.Home{
+    position:relative;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:rgb(143, 226, 143);
+}
+
+
+
+.Header{
+    position:absolute;
+    top:10%;
+    right:50%;
+    transform : translateX(50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.Header h1{
+    font-size:60px;
+    color:#fff;
+
+}
+
+.Form-Container{
+    width:450px;
+    padding:17px;
+    border-radius:13px;
+    background:#fff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.inputs{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+h2{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.Input ,
+Select {
+    width:100%;
+    height:45px;
+    border-radius:14px;
+    padding: 0 0 0 10px ;
+    outline:none;
+
+}
+
+label{
+    font-size:18px;
+    font-weight:800;
+    color:grey;
+}
+#Submit{
+    height:40px;
+    background:black;
+    color:#fff;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+#Submit:Hover{
+    background:rgb(102, 102, 102);
+}
+
+p{
+    margin-top:12px;
+    color:grey;
+}

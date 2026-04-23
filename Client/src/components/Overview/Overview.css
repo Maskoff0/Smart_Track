@@ -1,0 +1,32 @@
+.Overview{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:20px;
+    background:rgb(225, 247, 217);
+    height:87%;
+    border-radius:12px;
+    padding:0 12px;
+}
+.Left{
+    padding:15px 10px;
+   
+}
+.Card{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.Record{
+    margin-bottom:30px;
+    font-size:30px;
+    font-weight:800;
+}
+.Right{
+    padding:15px 0;
+}
+.Right span{
+    margin-bottom:30px;
+    font-size:30px;
+    font-weight:800;
+}

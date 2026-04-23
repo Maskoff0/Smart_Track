@@ -1,0 +1,14 @@
+.Admin{
+    width:100%;
+    height:100vh;
+    color:black;
+
+}
+
+.Admin-dashboard{
+    display:grid;
+    grid-template-columns:14rem auto;
+    width: 96%;
+    height:100%;
+}
+

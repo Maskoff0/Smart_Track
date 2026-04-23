@@ -1,0 +1,249 @@
+.field_container{
+    width:100%;
+    padding:0 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:15px;
+}
+.field_container h1{
+    font-size:60px;
+}
+
+.field_container span{
+    padding:10px 12px;
+    font-size:20px;
+    font-weight:800;
+    background:royalblue;
+    color:#fff;
+    border-radius:13px;
+    cursor:pointer;
+}
+.field_container span:hover{
+    background:rgb(0, 0, 128);
+}
+.field_container img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    padding:10px;
+    border:1px solid grey;
+    cursor:pointer;
+}
+.field_container img:hover{
+    background:grey;
+}
+
+.list {
+    width: 80%;
+    margin: 10px auto;
+    border-top: 1px solid #333;
+    padding: 0 10px 15px 10px;
+    background: #fafbfc;
+    box-sizing: border-box;
+}
+.list_records{
+    max-height: 600px; /* Adjust as needed */
+    overflow-y:auto;
+    
+}
+
+.list_title {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr;
+    align-items: center;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: #f7f7f7;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 1.05rem;
+}
+
+.field_record {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 1fr ;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ececec;
+    background: #fff;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.agent_record{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr ;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ececec;
+    background: #fff;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+.field_record:last-child {
+    border-bottom: none;
+}
+
+.field_record:hover {
+    background: #f0f4fa;
+}
+
+.field_record span, .list_title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.field_record span{
+   font-size:20px;
+   font-weight:800;
+   font-style:normal;
+   text-transform:capitalize;
+}
+
+.delete img{
+    width:20px;
+    height:20px;
+}
+.delete{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:5px 5px;
+    cursor:pointer;
+}
+.delete:hover{
+    background:red;
+}
+
+
+.delete:hover{
+    background:red;
+}
+.status_risk{
+    color:rgb(230, 67, 17);
+}
+.status_completed{
+    color:rgb(5, 128, 5);
+}
+.status_active{
+    color:blue;
+}
+
+/*Field_from styling*/
+.form_container{
+    position:absolute;
+    width:1400px;
+    height:80%;
+    top:10%;
+    right:10%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:20px auto;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    z-index:100;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        transform : translateY(-20px);
+        opacity : 0;
+    }
+    to {
+        transform : translateY(0);
+        opacity:1;
+    }
+}
+.fields_details{
+    width:1000px;
+    background:#ceecb9;
+    display:flex;
+    padding:15px 20px;
+    border-radius:20px;
+    flex-direction:column;
+    align-items:center;
+}
+
+form .Inputs{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    margin-top:15px;
+}
+.Inputs div{
+    display:flex;
+    flex-direction:column;
+}
+
+.Inputs input{
+    width:90%;
+    height:40px;
+    border-radius:10px;
+    padding:0 0 0 10px ;
+    font-size:18px;
+    font-weight:800;
+    color:black;
+    outline:none;
+    margin-top:15px;
+
+}
+.Inputs input::placeholder,
+.Input input::placeholder{
+    color:black;
+    font-size:18px;
+    font-weight:800;
+}
+.buttons{
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  margin-top:20px;
+}
+.close_btn{
+    padding:10px 15px;
+    font-size:20px;
+    font-weight:700;
+    background:red;
+    border-radius:12px;
+    color:white;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+.Submit_btn{
+    padding:10px 15px;
+    font-size:20px;
+    font-weight:700;
+    background:rgb(51, 83, 3);
+    border-radius:12px;
+    color:white;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+
+.close_btn:hover{
+    background:rgb(90, 1, 1);
+}
+
+.Submit_btn:hover{
+    background:rgb(2, 49, 2);
+}
+.Inputs div .Input_label{
+    background:transparent;
+    color:black;
+    font-weight:700;
+    font-size:20px;
+}
+.Inputs div .Input_label:hover{
+    background:transparent;
+}

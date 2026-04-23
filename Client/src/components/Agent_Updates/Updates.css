@@ -1,0 +1,241 @@
+.updates {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, rgb(214, 252, 214) 100%);
+    min-height: 100vh;
+}
+
+.updates h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.updates table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.updates thead {
+    background: linear-gradient(135deg, #667eea 0%, rgb(214, 252, 214) 100%);
+    color: white;
+    font-weight: 600;
+}
+
+.updates thead th {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.updates tbody tr {
+    border-bottom: 1px solid #e0e6ed;
+    transition: all 0.3s ease;
+}
+
+.updates tbody tr:hover {
+    background-color: #f8fafc;
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.updates tbody td {
+    padding: 1.2rem 1.5rem;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* Input and Select Styling */
+.updates input[type="text"],
+.updates select {
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+    border: 2px solid #e0e6ed;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: #2c3e50;
+}
+
+.updates input[type="text"]:focus,
+.updates select:focus {
+    outline: none;
+    border-color:rgb(214, 252, 214);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background-color: #f8fafc;
+}
+
+.updates input[type="text"]::placeholder {
+    color: #a0aec0;
+}
+
+/* Button Styling */
+.updates button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.updates button:last-child {
+    margin-right: 0;
+}
+
+/* Edit Button */
+.updates td button {
+    background: linear-gradient(135deg, #667eea 0%,rgb(214, 252, 214)100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.updates td button:hover {
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Save Button */
+.updates button[onClick*="handleSave"] {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+}
+
+.updates button[onClick*="handleSave"]:hover {
+    box-shadow: 0 6px 20px rgba(17, 153, 142, 0.6);
+}
+
+/* Cancel Button */
+.updates button[onClick*="handleCancel"] {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+}
+
+.updates button[onClick*="handleCancel"]:hover {
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+/* Empty and Loading States */
+.updates > p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .updates {
+        padding: 1rem;
+    }
+
+    .updates h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .updates table {
+        font-size: 0.85rem;
+    }
+
+    .updates thead th,
+    .updates tbody td {
+        padding: 0.8rem 1rem;
+    }
+
+    .updates button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+        margin-right: 0.3rem;
+    }
+
+    /* Stack buttons on mobile */
+    .updates td:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .updates td:last-child button {
+        margin-right: 0;
+        flex: 1 1 45%;
+        min-width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .updates {
+        padding: 0.5rem;
+    }
+
+    .updates h1 {
+        font-size: 1.3rem;
+    }
+
+    .updates table {
+        font-size: 0.8rem;
+    }
+
+    .updates thead th,
+    .updates tbody td {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .updates input[type="text"],
+    .updates select {
+        padding: 0.5rem;
+    }
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.updates table {
+    animation: slideIn 0.4s ease;
+}
+
+/* Scrollbar Styling */
+.updates::-webkit-scrollbar {
+    width: 8px;
+}
+
+.updates::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.updates::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+.updates::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}

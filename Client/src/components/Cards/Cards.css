@@ -1,0 +1,36 @@
+.Cards{
+    padding:10px 12px;
+    background:rgb(240, 195, 112);
+    border-radius:12px;
+    width:300px;
+}
+.Top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.Top h2{
+    font-weight:800;
+}
+.Top span{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:aqua;
+}
+.Bottom{
+    width:100%;
+    display:flex;
+   flex-direction:column;
+   align-items:center;
+}
+.Bottom p{
+    font-size:18px;
+    color:black;
+    font-weight:800;
+}
+.Bottom span{
+    font-weight:800;
+    font-size:40px;
+}
