@@ -13,7 +13,7 @@ const Sidebar = () => {
          </NavLink>
          <NavLink className="Link" to="/agent/updates">
            <img src='/icons/field.png' alt='Field'/>
-           <p>Updates</p>
+           <p>Update</p>
          </NavLink>
           <NavLink to='#' className="Log-Out">
             <img src= '/icons/logout.png' alt='Logout'/>

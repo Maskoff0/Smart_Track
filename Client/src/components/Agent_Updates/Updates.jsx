@@ -74,6 +74,7 @@ const Updates = () => {
                         <th>Crop Type</th>
                         <th>Field Stage</th>
                         <th>Field Status</th>
+                        <th>Notes</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -133,6 +134,19 @@ const Updates = () => {
                                     </select>
                                 ) : (
                                     assignment.fieldStatus
+                                )}
+                            </td>
+                            <td>
+                                {editingId === assignment.id ? (
+                                    <textarea 
+                                        name="notes" 
+                                        value={formData.notes || ''} 
+                                        onChange={handleChange}
+                                        placeholder="Add observations..."
+                                        rows="3"
+                                    />
+                                ) : (
+                                    <span className="notes-text">{assignment.notes || '-'}</span>
                                 )}
                             </td>
                             <td>

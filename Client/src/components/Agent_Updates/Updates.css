@@ -59,7 +59,8 @@
 
 /* Input and Select Styling */
 .updates input[type="text"],
-.updates select {
+.updates select,
+.updates textarea {
     width: 100%;
     padding: 0.7rem 0.8rem;
     border: 2px solid #e0e6ed;
@@ -71,16 +72,30 @@
     color: #2c3e50;
 }
 
+.updates textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
 .updates input[type="text"]:focus,
-.updates select:focus {
+.updates select:focus,
+.updates textarea:focus {
     outline: none;
     border-color:rgb(214, 252, 214);
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
     background-color: #f8fafc;
 }
 
-.updates input[type="text"]::placeholder {
+.updates input[type="text"]::placeholder,
+.updates textarea::placeholder {
     color: #a0aec0;
+}
+
+.notes-text {
+    color: #555;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 0.9rem;
 }
 
 /* Button Styling */
