@@ -16,6 +16,8 @@
   "type": "module",
   "dependencies": {
     "@neondatabase/serverless": "github:neondatabase/serverless",
+    "@netlify/functions": "^5.2.0",
+    "@types/express": "^5.0.6",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "drizzle-kit": "^0.31.10",
@@ -24,6 +26,7 @@
     "expresss": "^0.0.0",
     "nodemon": "^3.1.14",
     "pg": "^8.20.0",
+    "serverless-http": "^4.0.0",
     "zod": "^4.3.6"
   }
 }

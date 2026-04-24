@@ -1,4 +1,6 @@
+
 import express, { json } from 'express'
+import serverless from 'serverless-http'
 import { Veriyfy_LogIn } from './Routes/Log_in.js';
 import { employee } from './Routes/Log_in.js';
 import { configDotenv } from 'dotenv';
@@ -12,7 +14,7 @@ import { assignmentList, assignmentUpload, assignmentUpdate } from './Routes/Ass
 const PORT = process.env.PORT || 5000 ;
 
 const app = express();
-
+export const handler = serverless(app);
 
 app.use(express.json())
 app.use(cors({
