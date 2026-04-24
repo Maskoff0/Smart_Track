@@ -1,7 +1,8 @@
 import axios from "axios"
 
+const API_URL = "https://smart-season-backend-ecq6.onrender.com"
 
-const URL = "http://localhost:5000/assignmentlist"
+const URL = `${API_URL}/assignmentlist`
 
 
 export const getfiles = async () => {

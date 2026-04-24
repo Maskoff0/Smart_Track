@@ -9,13 +9,15 @@ import Assignment from './Assignment.jsx';
 
 
 const Assignments = () => {
-  const { files: agentFiles, isLoading: agentsLoading } = useAgentFiles();
-  const { files: fieldFiles, isLoading: fieldsLoading } = useFieldFiles();
-  const {files , refreshFiles} = usefiles();
+  const { files: agentFiles = [], isLoading: agentsLoading } = useAgentFiles();
+  const { files: fieldFiles = [], isLoading: fieldsLoading } = useFieldFiles();
+  const {files = [], refreshFiles} = usefiles();
   const [field , setfields] = useState({
     agentName : "",
     fieldName : ""
   })
+
+  const URL = "https://smart-season-backend-ecq6.onrender.com"
 
   const getSelectedField = () => {
     return fieldFiles.find(f => f.fieldName === field.fieldName);
@@ -30,7 +32,7 @@ const Assignments = () => {
     const data = { agentName : field.agentName , fieldName : field.fieldName , cropType : cropType ,fieldStage : fieldStage ,fieldStatus : fieldStatus}
     console.log(data);
 
-    const URL = 'http://localhost:5000/assignments';
+    const URL = `${URL}/assignments`;
 
       fetch(URL , {
         method : 'POST',

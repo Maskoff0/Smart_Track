@@ -7,7 +7,7 @@ import Fields_record from '../field_Records/field_record.jsx'
 
 
 const Fields = () => {
- const {files , success , isLoading , error , refreshFiles} = usefiles()
+ const {files = [] , success , isLoading , error , refreshFiles} = usefiles()
  const [showform , setshowform] = useState(false)
  
 

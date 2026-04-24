@@ -5,7 +5,7 @@ import { usefiles } from '../field_Records/fileshook.js'
 import "./Overview.css"
 
 const Left = () => {
-  const { files } = usefiles()
+  const { files = [] } = usefiles()
 
   // Count fields by status
   const activeCount = files.filter(f => f.fieldStatus === "Active").length

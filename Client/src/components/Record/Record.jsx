@@ -5,7 +5,7 @@ import { usefiles } from '../Assignment/hook.js';
 
 
 const Record = () => {
-    const {files} = usefiles();
+    const {files = []} = usefiles();
   return (
     <div className="Records">
         <div className="Title">

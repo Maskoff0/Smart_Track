@@ -5,7 +5,7 @@ import { usefiles } from '../agent_records/hook.js';
 import Agent_record from '../agent_records/agent_record.jsx';
 
 const Agents = () => {
-const {files , success , isLoading , error , refreshFiles} = usefiles()
+const {files = [] , success , isLoading , error , refreshFiles} = usefiles()
 const [showform , setshowform] = useState(false);
 
   return (

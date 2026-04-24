@@ -11,6 +11,8 @@ const Field_form = ({onClose, onSubmitSuccess}) => {
     fieldStatus : ""
  })
 
+ const URL = "https://smart-season-backend-ecq6.onrender.com"
+
  const handleChange = (e) => {
    const {name ,value} = e.target;
 
@@ -26,7 +28,7 @@ const Field_form = ({onClose, onSubmitSuccess}) => {
     //console.log(formdata)
 
     //Api call to submit the form data to the backend
-    const url = "http://localhost:5000/fieldUpload"; // Replace with your backend API endpoint
+    const url = `${URL}/fieldUpload}`; // Replace with your backend API endpoint
     fetch(url, {
       method: "POST",
        headers : {

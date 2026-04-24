@@ -6,7 +6,8 @@ const Overview = () => {
     const [assignments , setAssignments] = useState([])
     const [isLoading , setIsLoading] = useState(true)
     const [error , setError] = useState("")
-
+    
+    const URL = "https://smart-season-backend-ecq6.onrender.com"
     useEffect(() => {
         const agentName = localStorage.getItem('agentName')
 
@@ -19,7 +20,7 @@ const Overview = () => {
         const fetchAssignments = async () => {
             try{
                 setIsLoading(true)
-                const response = await fetch(`http://localhost:5000/assignmentlist?agentName=${agentName}`)
+                const response = await fetch(`${URL}/assignmentlist?agentName=${agentName}`)
                 const data = await response.json()
                 setAssignments(data.data || [])
             }catch(err){

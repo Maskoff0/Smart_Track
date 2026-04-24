@@ -7,7 +7,8 @@ const Home = () => {
   const [password , setpassword] = useState('');
   const [role , setrole] = useState('Admin');
 
-  const url = "http://localhost:5000/logIn"
+  const URL = "https://smart-season-backend-ecq6.onrender.com"
+  const url = `${URL}/logIn`;
   const navigate = useNavigate()
 
   const onSubmit = (e) => {

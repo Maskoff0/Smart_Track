@@ -7,6 +7,8 @@ const Updates = () => {
     const [formData, setFormData] = useState({})
     const [isLoading, setIsLoading] = useState(true)
 
+    const URL = "https://smart-season-backend-ecq6.onrender.com"
+
     useEffect(() => {
         fetchAssignments()
     }, [])
@@ -15,7 +17,7 @@ const Updates = () => {
         try {
             const agentName = localStorage.getItem('agentName')
             const response = await fetch(
-                `http://localhost:5000/assignmentlist?agentName=${agentName}`
+                `${URL}/assignmentlist?agentName=${agentName}`
             )
             const data = await response.json()
             setAssignments(data.data || [])
@@ -39,7 +41,7 @@ const Updates = () => {
     const handleSave = async () => {
         try {
             const response = await fetch(
-                `http://localhost:5000/assignmentupdate?id=${editingId}`,
+                `${URL}/assignmentupdate?id=${editingId}`,
                 {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },

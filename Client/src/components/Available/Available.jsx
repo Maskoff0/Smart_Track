@@ -4,7 +4,7 @@ import { usefiles } from '../field_Records/fileshook'
 import Available_records from './Available_records';
 
 const Available = () => {
-    const {files} = usefiles();
+    const {files = []} = usefiles();
 
   return (
     <div className="available">
