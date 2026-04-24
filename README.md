@@ -31,4 +31,8 @@ Here are some agent info from db for demo purpose
 Once logged in as an agent a person can update specific records that are assigned to him/her because it is personalized
 
 An agent an also make notes if need be on the field he/She is managing
-  
+
+
+Set-Up Instructions
+
+Git pull request from this repos url then open it thrugh a live server then try how amazing it is...
