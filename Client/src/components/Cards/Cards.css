@@ -1,36 +1,60 @@
-.Cards{
-    padding:10px 12px;
-    background:rgb(240, 195, 112);
-    border-radius:12px;
-    width:300px;
+.Cards {
+    padding: 10px 12px;
+    background: rgb(240, 195, 112);
+    border-radius: 12px;
+    width: 300px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.Top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
 
+.Cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-.Top h2{
-    font-weight:800;
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
-.Top span{
-    width:20px;
-    height:20px;
-    border-radius:50%;
-    background:aqua;
+
+.Card_Status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
 }
-.Bottom{
-    width:100%;
-    display:flex;
-   flex-direction:column;
-   align-items:center;
+
+.Top span:last-child {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
 }
-.Bottom p{
-    font-size:18px;
-    color:black;
-    font-weight:800;
+
+.Bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
-.Bottom span{
-    font-weight:800;
-    font-size:40px;
+
+.Bottom p {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.Bottom span {
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
 }

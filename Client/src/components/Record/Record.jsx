@@ -17,11 +17,11 @@ const Record = () => {
         </div>
         <div className="data">
             {files.length === 0 ? (
-                <div>
+                <div className="No_Records">
                     <p>No Available Records</p>
                 </div>
             ): (
-                <div>
+                <div className="Ass_Records">
                     {files.map(file => (
                         <Assignment key={file.id} file={file}/>
                     ))}
