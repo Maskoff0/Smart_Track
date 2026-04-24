@@ -97,3 +97,16 @@ span img{
 .buttons .Submit_btn:hover{
     background:rgb(2, 49, 2);
 }
+
+.no_data{
+    width:90%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.no_data p{
+    font-size:30px;
+    font-weight:800;
+    
+}

@@ -11,8 +11,9 @@ const MAX_LIMIT = 100
 fieldUpload.post('/' , async(req, res)=>{
     const parsed = createFieldSchema.safeParse(req.body);
 
-    if(!parsed){
+    if(!parsed.success){
         res.status(500).json({message : 'Invalid Credentials'})
+        return;
     }
 
     const {data : {fieldName , cropType , fieldStage , fieldStatus}} = parsed;
@@ -35,6 +36,7 @@ field.get('/' , async(req , res) =>{
 
     if(!parsed.success){
         res.status(400).json({messge : "Records failed to fetch"})
+        return;
     }
 
     const limit = Math.min(parsed.data.limit ?? 50 , MAX_LIMIT)
@@ -44,7 +46,7 @@ field.get('/' , async(req , res) =>{
         .select()
         .from(fields)
         .orderBy((desc(fields.id)))
-        .limit()
+        .limit(limit)
         
         res.status(201).json({data})
     }catch(error){

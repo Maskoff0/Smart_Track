@@ -4,7 +4,7 @@ import '../Fields/fields.css'
 import "./agents.css"
 
 
-const Agent_form = ({onClose}) => {
+const Agent_form = ({onClose , onSubmitSuccess}) => {
  const [formdata , setFormData] = useState({
     agentNumber : "",
     agentName : ""
@@ -36,6 +36,7 @@ const Agent_form = ({onClose}) => {
        .then(res => res.json())
        .then(data => {
         console.log('success:' , data)
+        if(onSubmitSuccess) onSubmitSuccess()
         onClose()
        }).catch(err => console.error(err));
  }

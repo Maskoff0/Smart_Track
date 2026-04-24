@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './fields.css'
 
 
-const Field_form = ({onClose}) => {
+const Field_form = ({onClose, onSubmitSuccess}) => {
  const [formdata , setFormData] = useState({
     fieldName : "",
     cropType : "",
@@ -37,8 +37,9 @@ const Field_form = ({onClose}) => {
        .then(res => res.json())
        .then(data => {
         console.log('success:' , data)
+        if(onSubmitSuccess) onSubmitSuccess()
         onClose()
-       }).catch(err => console.error(err));
+       }).catch((err) => console.error(err));
  }
 
   return (

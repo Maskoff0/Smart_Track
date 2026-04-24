@@ -33,6 +33,7 @@ export const usefiles = () => {
         files,
         success,
         isLoading,
-        error
+        error,
+        refreshFiles: files_data
     }
 }

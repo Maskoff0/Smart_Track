@@ -24,7 +24,7 @@ const SideBar = () => {
            <img src='/icons/assign.png' alt='Agent'/>
            <p>Assignments</p>
          </NavLink>
-         <NavLink to='#' className="Log-Out">
+         <NavLink to='/' className="Log-Out">
            <img src= '/icons/logout.png' alt='Logout'/>
            <p>Log-Out</p>
          </NavLink>

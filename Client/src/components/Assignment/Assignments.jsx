@@ -11,7 +11,7 @@ import Assignment from './Assignment.jsx';
 const Assignments = () => {
   const { files: agentFiles, isLoading: agentsLoading } = useAgentFiles();
   const { files: fieldFiles, isLoading: fieldsLoading } = useFieldFiles();
-  const {files} = usefiles();
+  const {files , refreshFiles} = usefiles();
   const [field , setfields] = useState({
     agentName : "",
     fieldName : ""
@@ -41,6 +41,7 @@ const Assignments = () => {
       }).then(res => res.json())
     .then(data => {
         console.log('success:' , data)
+        refreshFiles()
       }).catch((err) => console.error(err));
 
   }

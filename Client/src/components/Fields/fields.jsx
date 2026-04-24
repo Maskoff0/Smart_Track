@@ -7,7 +7,7 @@ import Fields_record from '../field_Records/field_record.jsx'
 
 
 const Fields = () => {
- const {files , success , isLoading , error} = usefiles()
+ const {files , success , isLoading , error , refreshFiles} = usefiles()
  const [showform , setshowform] = useState(false)
  
 
@@ -20,7 +20,7 @@ const Fields = () => {
           <span>Add Field</span>
         </div>
         {showform && (
-          <Field_form onClose = {()=> setshowform(false)}/>
+          <Field_form onClose = {()=> setshowform(false)} onSubmitSuccess={refreshFiles}/>
         )}
       </div>
       <div className={`${files.length === 0 ? "empty_list" : "list"}`}>

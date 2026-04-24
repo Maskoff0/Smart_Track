@@ -2,7 +2,7 @@
     display:grid;
     grid-template-columns: 2fr 1fr;
     gap:20px;
-    background:rgb(225, 247, 217);
+    background:#fff;
     height:87%;
     border-radius:12px;
     padding:0 12px;
